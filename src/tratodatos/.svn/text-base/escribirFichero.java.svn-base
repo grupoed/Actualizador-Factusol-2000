@@ -1,0 +1,34 @@
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package tratodatos;
+
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Iterator;
+
+/**
+ *
+ * @author Dell
+ */
+class escribirFichero {
+    
+    static void escribirFichero(String path,ArrayList<ArrayList<String>> datos) throws IOException{
+        File fichero=new File(path);
+        if(!fichero.exists()){
+            fichero.createNewFile();
+        }
+        BufferedWriter bw=new BufferedWriter(new FileWriter(path));
+        Iterator it=datos.iterator();
+        bw.write("Referencia;Nombre;Precio;Mayorista;Stock;Familia;Subfamilia;Fabricante;Peso\n");
+        while(it.hasNext()){
+            ArrayList<String> aux=(ArrayList<String>) it.next();
+            bw.write(aux.get(0)+";"+aux.get(1)+";"+aux.get(2)+";"+aux.get(3)+";"+aux.get(4)+";"+aux.get(5)+";"+aux.get(6)+";"+aux.get(7)+";"+aux.get(8)+"\n");
+        }
+    }
+    
+}

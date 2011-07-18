@@ -1,0 +1,84 @@
+10
+
+dir
+0
+https://comparador-escudero-dueso.googlecode.com/svn/trunk/comparador/lib/jdom/build/apidocs/org/jdom/output/class-use
+https://comparador-escudero-dueso.googlecode.com/svn
+add
+
+
+
+
+
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+b8a409f9-30f7-2278-4f50-e20bd0e97973
+
+DOMOutputter.html
+file
+
+
+
+add
+
+EscapeStrategy.html
+file
+
+
+
+add
+
+Format.TextMode.html
+file
+
+
+
+add
+
+Format.html
+file
+
+
+
+add
+
+JDOMLocator.html
+file
+
+
+
+add
+
+SAXOutputter.html
+file
+
+
+
+add
+
+XMLOutputter.NamespaceStack.html
+file
+
+
+
+add
+
+XMLOutputter.html
+file
+
+
+
+add
+

@@ -1,0 +1,154 @@
+10
+
+dir
+0
+https://comparador-escudero-dueso.googlecode.com/svn/trunk/comparador/lib/jdom/samples
+https://comparador-escudero-dueso.googlecode.com/svn
+add
+
+
+
+
+
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+b8a409f9-30f7-2278-4f50-e20bd0e97973
+
+DescendantDemo.java
+file
+
+
+
+add
+
+SAXBuilderDemo.java
+file
+
+
+
+add
+
+SAXBuilderTestEntity.dtd
+file
+
+
+
+add
+
+SAXBuilderTestEntity.xml
+file
+
+
+
+add
+
+SAXBuilderTestEntity2.xml
+file
+
+
+
+add
+
+WarReader.java
+file
+
+
+
+add
+
+XPathReader.java
+file
+
+
+
+add
+
+XSLTransform.java
+file
+
+
+
+add
+
+catalog.xml
+file
+
+
+
+add
+
+catalog.xsl
+file
+
+
+
+add
+
+cdata.xml
+file
+
+
+
+add
+
+contents.xml
+file
+
+
+
+add
+
+fibo.xml
+file
+
+
+
+add
+
+inline.xml
+file
+
+
+
+add
+
+namespaces.xml
+file
+
+
+
+add
+
+sax
+dir
+
+
+
+add
+
+testNamespaces.xml
+file
+
+
+
+add
+
+web.xml
+file
+
+
+
+add
+

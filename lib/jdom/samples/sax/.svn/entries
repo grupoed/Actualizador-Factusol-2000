@@ -1,0 +1,98 @@
+10
+
+dir
+0
+https://comparador-escudero-dueso.googlecode.com/svn/trunk/comparador/lib/jdom/samples/sax
+https://comparador-escudero-dueso.googlecode.com/svn
+add
+
+
+
+
+
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+b8a409f9-30f7-2278-4f50-e20bd0e97973
+
+DataFormatFilter.java
+file
+
+
+
+add
+
+DataUnformatFilter.java
+file
+
+
+
+add
+
+DocumentReader.java
+file
+
+
+
+add
+
+FilterTest.java
+file
+
+
+
+add
+
+ReaderTest.java
+file
+
+
+
+add
+
+XMLFilterBase.java
+file
+
+
+
+add
+
+XMLReaderBase.java
+file
+
+
+
+add
+
+XMLWriter.java
+file
+
+
+
+add
+
+test1.xml
+file
+
+
+
+add
+
+test2.xml
+file
+
+
+
+add
+

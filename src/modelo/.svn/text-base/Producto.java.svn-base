@@ -1,0 +1,125 @@
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package modelo;
+
+import java.util.ArrayList;
+
+/**
+ *
+ * @author Victor
+ */
+class Producto {
+    private String referencia;
+    private String nombre;
+    private double precio;
+    private String mayorista;
+    private int stock;//0 -> NO DISPONIBLE -- 1 -> POCAS UNIDADES -- 2 -> DISPONIBLE
+    private int codigoFamilia;
+    private int codigoSubfamilia;
+    private String fabricante;
+    private double peso;
+
+    Producto(String referencia, String nombre, double precio, String mayorista, int stock, int codigoFamilia, int codigoSubfamilia, String fabricante, double peso) {
+        this.referencia = referencia;
+        this.nombre = nombre;
+        this.precio = precio;
+        this.mayorista = mayorista;
+        this.stock = stock;
+        this.codigoFamilia=codigoFamilia;
+        this.codigoSubfamilia = codigoSubfamilia;
+        this.fabricante = fabricante;
+        this.peso = peso;
+    }
+
+    public int getStock() {
+        return stock;
+    }
+
+    public void setStock(int stock) {
+        this.stock = stock;
+    }
+
+     int getCodigoFamilia() {
+        return codigoFamilia;
+    }
+
+     void setCodigoFamilia(int codigoFamilia) {
+        this.codigoFamilia = codigoFamilia;
+    }
+
+     int getCodigoSubfamilia() {
+        return codigoSubfamilia;
+    }
+
+     void setCodigoSubfamilia(int codigoSubfamilia) {
+        this.codigoSubfamilia = codigoSubfamilia;
+    }
+
+     String getFabricante() {
+        return fabricante;
+    }
+
+     void setFabricante(String fabricante) {
+        this.fabricante = fabricante;
+    }
+
+     String getMayorista() {
+        return mayorista;
+    }
+
+     void setMayorista(String mayorista) {
+        this.mayorista = mayorista;
+    }
+
+     String getNombre() {
+        return nombre;
+    }
+
+     void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+     double getPeso() {
+        return peso;
+    }
+
+     void setPeso(double peso) {
+        this.peso = peso;
+    }
+
+     double getPrecio() {
+        return precio;
+    }
+
+     void setPrecio(double precio) {
+        this.precio = precio;
+    }
+
+     String getReferencia() {
+        return referencia;
+    }
+
+     void setReferencia(String referencia) {
+        this.referencia = referencia;
+    }
+     
+    boolean esmayor(Producto comp){
+        return this.precio<comp.precio;
+    }
+    
+    ArrayList getData(){
+        ArrayList datos=new ArrayList();
+        datos.add(referencia);
+        datos.add(nombre);
+        datos.add(Double.toString(precio));
+        datos.add(mayorista);
+        datos.add(Integer.toString(stock));
+        datos.add(Integer.toString(this.codigoFamilia));
+        datos.add(Integer.toString(this.codigoSubfamilia));
+        datos.add(this.fabricante);
+        datos.add(Double.toString(peso));
+        return datos;
+    }
+}

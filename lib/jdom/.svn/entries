@@ -1,0 +1,126 @@
+10
+
+dir
+0
+https://comparador-escudero-dueso.googlecode.com/svn/trunk/comparador/lib/jdom
+https://comparador-escudero-dueso.googlecode.com/svn
+add
+
+
+
+
+
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+b8a409f9-30f7-2278-4f50-e20bd0e97973
+
+CHANGES.txt
+file
+
+
+
+add
+
+COMMITTERS.txt
+file
+
+
+
+add
+
+LICENSE.txt
+file
+
+
+
+add
+
+README.txt
+file
+
+
+
+add
+
+TODO.txt
+file
+
+
+
+add
+
+build
+dir
+
+
+
+add
+
+build.bat
+file
+
+
+
+add
+
+build.sh
+file
+
+
+
+add
+
+build.xml
+file
+
+
+
+add
+
+etc
+dir
+
+
+
+add
+
+lib
+dir
+
+
+
+add
+
+package
+dir
+
+
+
+add
+
+samples
+dir
+
+
+
+add
+
+src
+dir
+
+
+
+add
+

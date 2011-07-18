@@ -1,0 +1,84 @@
+10
+
+dir
+0
+https://comparador-escudero-dueso.googlecode.com/svn/trunk/comparador/lib/jdom/src/java/org/jdom/input
+https://comparador-escudero-dueso.googlecode.com/svn
+add
+
+
+
+
+
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+b8a409f9-30f7-2278-4f50-e20bd0e97973
+
+BuilderErrorHandler.java
+file
+
+
+
+add
+
+DOMBuilder.java
+file
+
+
+
+add
+
+JAXPParserFactory.java
+file
+
+
+
+add
+
+JDOMParseException.java
+file
+
+
+
+add
+
+SAXBuilder.java
+file
+
+
+
+add
+
+SAXHandler.java
+file
+
+
+
+add
+
+TextBuffer.java
+file
+
+
+
+add
+
+package.html
+file
+
+
+
+add
+

@@ -1,0 +1,136 @@
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package tratodatos;
+
+
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.text.DecimalFormat;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Map;
+import org.jdom.Document;
+import org.jdom.Element;
+import org.jdom.JDOMException;
+import org.jdom.input.SAXBuilder;
+
+/**
+ *
+ * @author Victor
+ */
+public class leerXML {
+    SAXBuilder builder=new SAXBuilder(false);
+    Document doc;
+    
+    public leerXML(String path) throws FileNotFoundException, JDOMException, IOException{
+        doc=builder.build(path);
+    }
+    
+    public List obtenerDatos() throws IOException{
+        List<Map<String,String>> productos=new ArrayList();
+        Element raiz=doc.getRootElement();
+        List subhijos=raiz.getChildren();
+        Iterator it=subhijos.iterator();
+        while(it.hasNext()){
+            Map<String,String> datos=new HashMap();
+            Element aux=(Element)it.next();
+            List etiquetas=aux.getChildren();
+            //System.out.println(etiquetas.size());
+            Iterator it2=etiquetas.iterator();
+            while(it2.hasNext()){
+                Element etiqueta=(Element)it2.next();
+                datos=this.obtenerDatosElemento(etiqueta, raiz,datos);
+            }
+            productos.add(datos);
+            
+        }
+        return productos;
+    }
+    
+    private String parseXML(String valor){
+        if(valor.indexOf("[CDATA: ")!=-1){
+            valor=valor.substring(valor.indexOf("[CDATA: ")+8,valor.length()-1);
+        }
+        else if(valor.indexOf("[Text: ")!=-1){
+            valor=valor.substring(valor.indexOf("[Text: ")+7,valor.length()-1);
+        }
+        return valor;
+    }
+
+    private String convertirPrecio(String precio, String canon) {
+        DecimalFormat df = new DecimalFormat("0.00"); 
+        Double can=this.convertirStringFloat(canon);
+        Double price=this.convertirStringFloat(precio);
+        price=can+price;
+        price*=1.18;
+        String ret=String.format("%.2f",price) ;
+        //String ret2=this.quitarComas(ret);
+        return ret;
+    }
+    
+    private Double convertirStringFloat(String num){
+        if(num.indexOf(',')!=-1){
+            num=num.replace(',', '.');
+        }
+        return Double.parseDouble(num);
+    }
+    
+    private String quitarComas(String num){
+        if(num.indexOf(',')!=-1){
+            num=num.replace(',', '.');
+        }
+        return num;
+    }
+
+    private String parseFamilia(String familia) {
+        return familia;
+    }
+
+    private String parseSubFamilia(String subfamilia) {
+        return subfamilia;
+    }
+    
+    private Map obtenerDatosElemento(Element tag,Element raiz,Map<String,String> datos){
+        if(raiz.getName().equals("datos")){
+            datos.put("mayorista","Infortisa");
+        }
+        else if(raiz.getName().equalsIgnoreCase("catalogo")){
+            datos.put("mayorista", "Megasur");
+        }
+        if(tag.getName().equalsIgnoreCase("referencia") || tag.getName().equalsIgnoreCase("part_number")){
+            datos.put("referencia", this.parseXML(tag.getText()));
+        }
+        else if(tag.getName().equalsIgnoreCase("titulo") || tag.getName().equalsIgnoreCase("nombre")){
+            datos.put("nombre", this.parseXML(tag.getText()));
+        }
+        else if(tag.getName().equalsIgnoreCase("stock")){
+            datos.put("stock", tag.getText());
+        }
+        else if(tag.getName().equalsIgnoreCase("pvd") || tag.getName().equalsIgnoreCase("precio")){
+            datos.put("precio", convertirPrecio(tag.getText(),tag.getParentElement().getChild("canon").getText()));
+        }
+        else if(tag.getName().equalsIgnoreCase("stock")){
+            datos.put("stock", tag.getText());
+        }
+        else if(tag.getName().equalsIgnoreCase("familia") || tag.getName().equalsIgnoreCase("categoria_1")){
+            datos.put("familia", parseFamilia(tag.getText()));
+        }
+        else if(tag.getName().equalsIgnoreCase("subfamilia") || tag.getName().equalsIgnoreCase("categoria_2")){
+            datos.put("subfamilia", parseSubFamilia(tag.getText()));
+        }
+        else if(tag.getName().equalsIgnoreCase("marca")){
+            datos.put("marca", tag.getText());
+        }
+        else if(tag.getName().equalsIgnoreCase("peso")){
+            datos.put("peso", Double.toString(this.convertirStringFloat(tag.getText())));
+        }
+        else if(tag.getName().equalsIgnoreCase("descripcion")){
+            datos.put("descripcion", tag.getText());
+        }
+        return datos;
+    }
+}

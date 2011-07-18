@@ -1,0 +1,266 @@
+10
+
+dir
+0
+https://comparador-escudero-dueso.googlecode.com/svn/trunk/comparador/lib/jdom/src/java/org/jdom
+https://comparador-escudero-dueso.googlecode.com/svn
+add
+
+
+
+
+
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+b8a409f9-30f7-2278-4f50-e20bd0e97973
+
+Attribute.java
+file
+
+
+
+add
+
+AttributeList.java
+file
+
+
+
+add
+
+CDATA.java
+file
+
+
+
+add
+
+Comment.java
+file
+
+
+
+add
+
+Content.java
+file
+
+
+
+add
+
+ContentList.java
+file
+
+
+
+add
+
+DataConversionException.java
+file
+
+
+
+add
+
+DefaultJDOMFactory.java
+file
+
+
+
+add
+
+DescendantIterator.java
+file
+
+
+
+add
+
+DocType.java
+file
+
+
+
+add
+
+Document.java
+file
+
+
+
+add
+
+Element.java
+file
+
+
+
+add
+
+EntityRef.java
+file
+
+
+
+add
+
+FilterIterator.java
+file
+
+
+
+add
+
+IllegalAddException.java
+file
+
+
+
+add
+
+IllegalDataException.java
+file
+
+
+
+add
+
+IllegalNameException.java
+file
+
+
+
+add
+
+IllegalTargetException.java
+file
+
+
+
+add
+
+JDOMException.java
+file
+
+
+
+add
+
+JDOMFactory.java
+file
+
+
+
+add
+
+Namespace.java
+file
+
+
+
+add
+
+NamespaceKey.java
+file
+
+
+
+add
+
+Parent.java
+file
+
+
+
+add
+
+ProcessingInstruction.java
+file
+
+
+
+add
+
+Text.java
+file
+
+
+
+add
+
+UncheckedJDOMFactory.java
+file
+
+
+
+add
+
+Verifier.java
+file
+
+
+
+add
+
+adapters
+dir
+
+
+
+add
+
+filter
+dir
+
+
+
+add
+
+input
+dir
+
+
+
+add
+
+output
+dir
+
+
+
+add
+
+package.html
+file
+
+
+
+add
+
+transform
+dir
+
+
+
+add
+
+xpath
+dir
+
+
+
+add
+

@@ -1,0 +1,182 @@
+10
+
+dir
+0
+https://comparador-escudero-dueso.googlecode.com/svn/trunk/comparador/lib/jdom/build/apidocs/org/jdom/class-use
+https://comparador-escudero-dueso.googlecode.com/svn
+add
+
+
+
+
+
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+b8a409f9-30f7-2278-4f50-e20bd0e97973
+
+Attribute.html
+file
+
+
+
+add
+
+CDATA.html
+file
+
+
+
+add
+
+Comment.html
+file
+
+
+
+add
+
+Content.html
+file
+
+
+
+add
+
+DataConversionException.html
+file
+
+
+
+add
+
+DefaultJDOMFactory.html
+file
+
+
+
+add
+
+DocType.html
+file
+
+
+
+add
+
+Document.html
+file
+
+
+
+add
+
+Element.html
+file
+
+
+
+add
+
+EntityRef.html
+file
+
+
+
+add
+
+IllegalAddException.html
+file
+
+
+
+add
+
+IllegalDataException.html
+file
+
+
+
+add
+
+IllegalNameException.html
+file
+
+
+
+add
+
+IllegalTargetException.html
+file
+
+
+
+add
+
+JDOMException.html
+file
+
+
+
+add
+
+JDOMFactory.html
+file
+
+
+
+add
+
+Namespace.html
+file
+
+
+
+add
+
+Parent.html
+file
+
+
+
+add
+
+ProcessingInstruction.html
+file
+
+
+
+add
+
+Text.html
+file
+
+
+
+add
+
+UncheckedJDOMFactory.html
+file
+
+
+
+add
+
+Verifier.html
+file
+
+
+
+add
+

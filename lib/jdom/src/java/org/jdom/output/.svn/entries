@@ -1,0 +1,84 @@
+10
+
+dir
+0
+https://comparador-escudero-dueso.googlecode.com/svn/trunk/comparador/lib/jdom/src/java/org/jdom/output
+https://comparador-escudero-dueso.googlecode.com/svn
+add
+
+
+
+
+
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+b8a409f9-30f7-2278-4f50-e20bd0e97973
+
+DOMOutputter.java
+file
+
+
+
+add
+
+EscapeStrategy.java
+file
+
+
+
+add
+
+Format.java
+file
+
+
+
+add
+
+JDOMLocator.java
+file
+
+
+
+add
+
+NamespaceStack.java
+file
+
+
+
+add
+
+SAXOutputter.java
+file
+
+
+
+add
+
+XMLOutputter.java
+file
+
+
+
+add
+
+package.html
+file
+
+
+
+add
+
