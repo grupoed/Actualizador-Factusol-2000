@@ -25,7 +25,7 @@ public class introducirProductos {
             grupo=grupoED.getGrupoED();
             String path=System.getProperty("user.home") + "\\Mis Documentos";
             System.out.println("Descargando Fichero.Espere por favor...");
-           // descargarFichero.descargarFichero("http://www.megasur.es/descargas/tarifas/SetXML.php?cod=223419&val=c246e06615e62d29f85461e62061d3d4", path+"\\megasur.xml");
+            //descargarFichero.descargarFichero("http://www.megasur.es/descargas/tarifas/SetXML.php?cod=223419&val=c246e06615e62d29f85461e62061d3d4", path+"\\megasur.xml");
             System.out.println("Fichero descargado.Procediendo a la comparacion");
             xml=new leerXML(path+"\\megasur.xml");
             this.parsear(xml);

@@ -7,6 +7,7 @@ package tratodatos;
 import java.sql.Connection;
 import java.sql.Driver;
 import java.sql.DriverManager;
+import java.util.Properties;
 
 /**
  *
@@ -16,7 +17,9 @@ public class conectarBD {
     
      public static Connection getConnection(String dsn) throws Exception {
         Driver d = (Driver)Class.forName("sun.jdbc.odbc.JdbcOdbcDriver").newInstance();
-        Connection c = DriverManager.getConnection("jdbc:odbc:"+dsn);
+        Properties props = new Properties();
+        props.put ("charSet", "iso-8859-1");
+        Connection c = DriverManager.getConnection("jdbc:odbc:"+dsn,props);
         return c;
      }
 }
